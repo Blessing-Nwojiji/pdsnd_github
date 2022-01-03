@@ -26,4 +26,4 @@ Bikeshare_Project.py
 
 ### Credits
 
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Lessons from the udacity classroom and Oludare Israel, Abdulrafizz Umar were very instrumental in completing this project.
