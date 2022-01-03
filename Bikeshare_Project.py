@@ -212,7 +212,7 @@ def user_stats(df):
     for user_type in user_types.keys():
         print("\t {} : \t {}".format(user_type, user_types[user_type]))
 
-    # Display counts of gender
+    # Display counts of gender to make it easy to understand
     try:   
         #Some of the data set does not have a gender column. So we have to use try and except to handle this error in case it occurs. 
         user_genders = dict(df.groupby(["Gender"])["Gender"].count())
