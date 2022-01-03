@@ -264,6 +264,7 @@ def view_data(df):
         answer = input("Great job!1, do you wish to see the next first 5 rows of the raw data? (yes or no) : ").lower().strip()
 
 def main():
+    #this calls all the functions.
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
