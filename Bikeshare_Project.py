@@ -39,7 +39,7 @@ def get_filters():
         except Exception:
             city_prompt = "There was a little mix up there, try any of the city index numbers e.g (1,2 or 3): "
 
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, ... , june)
     selected_month = None
     month_prompt = 'You rock!! now, select or type in any number from the list of months (you can select the index for all to see the details from all the months): '
 
@@ -55,7 +55,7 @@ def get_filters():
         except Exception:
             month_prompt = "Oops! you made the wrong entry, select or type in a correct number e.g (1,2 or 3): "
 
-    # get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week (all, monday ... sunday)
     selected_day = None
     day_prompt = 'Seems you are an expert in this!! now, select or type in any number from the list of days(you can select the index for all): '
 
@@ -212,7 +212,7 @@ def user_stats(df):
     for user_type in user_types.keys():
         print("\t {} : \t {}".format(user_type, user_types[user_type]))
 
-    # Display counts of gender
+    # Display counts of gender to make it easy to understand
     try:   
         #Some of the data set does not have a gender column. So we have to use try and except to handle this error in case it occurs. 
         user_genders = dict(df.groupby(["Gender"])["Gender"].count())
@@ -264,6 +264,7 @@ def view_data(df):
         answer = input("Great job!1, do you wish to see the next first 5 rows of the raw data? (yes or no) : ").lower().strip()
 
 def main():
+    #this calls all the functions.
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
