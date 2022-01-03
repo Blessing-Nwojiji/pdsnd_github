@@ -19,7 +19,10 @@ In this project, I used data provided by Motivate, a bike share system provider 
 
 ### Files used
 
-Include the files used
+chicago.csv
+washington.csv
+new_york_city.csv
+Bikeshare_Project.py
 
 ### Credits
 
