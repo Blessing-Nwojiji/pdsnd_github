@@ -39,7 +39,7 @@ def get_filters():
         except Exception:
             city_prompt = "There was a little mix up there, try any of the city index numbers e.g (1,2 or 3): "
 
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, ... , june)
     selected_month = None
     month_prompt = 'You rock!! now, select or type in any number from the list of months (you can select the index for all to see the details from all the months): '
 
@@ -55,7 +55,7 @@ def get_filters():
         except Exception:
             month_prompt = "Oops! you made the wrong entry, select or type in a correct number e.g (1,2 or 3): "
 
-    # get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week (all, monday ... sunday)
     selected_day = None
     day_prompt = 'Seems you are an expert in this!! now, select or type in any number from the list of days(you can select the index for all): '
 
